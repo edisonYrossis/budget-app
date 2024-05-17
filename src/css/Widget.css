@@ -1,0 +1,26 @@
+.widget {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+
+.circularBar {
+
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        user-select: none;
+}
+
+.circularBar span{
+    position: absolute;
+    top: 43%;
+}

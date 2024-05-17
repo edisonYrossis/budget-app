@@ -1,0 +1,30 @@
+.toggle-container {
+    width: 45px;
+    height: 25px;
+    background-color: #dddadab6;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: -1; /* Agrega una transición para el cambio de color */
+  }
+  
+  .toggle-container.active {
+    background-color: #111111b4; /* Cambia el color de fondo cuando está activo */
+  }
+  
+  .toggle-handle {
+    width: 19px;
+    height: 19px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+     /* Agrega una transición para el movimiento lateral */
+  }
+  
+  .toggle-container.active .toggle-handle {
+    left: calc(100% - 23px); 
+  }
